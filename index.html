@@ -305,15 +305,15 @@
 
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(4, 1fr); /* 4 أعمدة في نفس السطر */
+            gap: 25px;
             margin-top: 30px;
         }
 
         .contact-card {
             background-color: white;
             border-radius: var(--border-radius);
-            padding: 35px;
+            padding: 30px 25px;
             box-shadow: var(--box-shadow);
             transition: var(--transition);
             border: 1px solid var(--light-gray);
@@ -360,14 +360,14 @@
         }
 
         .contact-icon {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 25px;
-            font-size: 2.5rem;
+            margin: 0 auto 20px;
+            font-size: 2rem;
             color: white;
             z-index: 2;
         }
@@ -389,7 +389,7 @@
         }
 
         .contact-card h3 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             margin-bottom: 15px;
             z-index: 2;
         }
@@ -412,9 +412,9 @@
 
         .contact-card p {
             color: var(--gray-color);
-            margin-bottom: 25px;
-            font-size: 1rem;
-            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.5;
             z-index: 2;
             flex: 1;
         }
@@ -423,11 +423,11 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            padding: 12px 30px;
+            gap: 8px;
+            padding: 10px 25px;
             border-radius: var(--border-radius);
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 0.9rem;
             cursor: pointer;
             transition: var(--transition);
             border: none;
@@ -435,7 +435,7 @@
             z-index: 2;
             text-decoration: none;
             width: 100%;
-            max-width: 200px;
+            max-width: 180px;
         }
 
         .card-email .contact-btn {
@@ -629,6 +629,15 @@
             .container {
                 max-width: 95%;
             }
+            
+            .contact-grid {
+                gap: 20px;
+            }
+            
+            .contact-card {
+                padding: 25px 20px;
+                min-height: 300px;
+            }
         }
 
         @media (max-width: 992px) {
@@ -644,13 +653,15 @@
                 padding: 50px 0;
             }
             
+            /* 2 بطاقات في السطر للشاشات المتوسطة */
             .contact-grid {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
             }
             
             .contact-card {
-                padding: 30px;
-                min-height: 300px;
+                padding: 25px;
+                min-height: 280px;
             }
             
             .language-buttons {
@@ -694,21 +705,36 @@
                 font-size: 1rem;
             }
             
+            /* 2 بطاقات في السطر للشاشات الصغيرة */
             .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 25px;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
             }
             
             .contact-card {
-                padding: 25px;
-                min-height: 280px;
+                padding: 20px;
+                min-height: 260px;
             }
             
             .contact-icon {
-                width: 70px;
-                height: 70px;
-                font-size: 2rem;
-                margin-bottom: 20px;
+                width: 60px;
+                height: 60px;
+                font-size: 1.8rem;
+                margin-bottom: 15px;
+            }
+            
+            .contact-card h3 {
+                font-size: 1.2rem;
+            }
+            
+            .contact-card p {
+                font-size: 0.9rem;
+            }
+            
+            .contact-btn {
+                padding: 8px 20px;
+                font-size: 0.85rem;
+                max-width: 160px;
             }
             
             .language-buttons {
@@ -750,29 +776,35 @@
                 padding: 40px 0;
             }
             
+            /* بطاقة واحدة في السطر للهواتف الصغيرة */
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
             .contact-card {
                 padding: 20px;
-                min-height: 260px;
+                min-height: 240px;
             }
             
             .contact-icon {
-                width: 60px;
-                height: 60px;
-                font-size: 1.8rem;
+                width: 55px;
+                height: 55px;
+                font-size: 1.6rem;
             }
             
             .contact-card h3 {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
             
             .contact-card p {
-                font-size: 0.95rem;
+                font-size: 0.85rem;
             }
             
             .contact-btn {
-                padding: 10px 20px;
-                font-size: 0.9rem;
-                max-width: 180px;
+                padding: 8px 18px;
+                font-size: 0.8rem;
+                max-width: 150px;
             }
             
             .language-selector {
@@ -799,11 +831,15 @@
             }
             
             .contact-card h3 {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
             
             .contact-card p {
-                font-size: 0.9rem;
+                font-size: 0.8rem;
+            }
+            
+            .contact-card {
+                min-height: 220px;
             }
         }
 
@@ -823,7 +859,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="https://contact.ondeenway.org" style="color: inherit; text-decoration: none;">
+                    <a href="https://quran.ondeenway.org" style="color: inherit; text-decoration: none;">
                         <h1>DEENWAY <span class="logo-highlight">Contact</span></h1>
                         <p class="tagline">تواصل معنا - متعدد اللغات</p>
                     </a>
@@ -1131,7 +1167,7 @@
                     },
                     facebook: {
                         title: "Facebook",
-                        desc: "Soru ve takipler için bizimle Facebook'ta iletişime geçin",
+                        desc: "Soru و takipler için bizimle Facebook'ta iletişime geçin",
                         link: "Facebook'ta İletişim"
                     },
                     instagram: {
