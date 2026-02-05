@@ -1,837 +1,1354 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact DEENWAY</title>
-  <!-- Favicon -->
-  <link rel="icon" type="image/webp" href="https://blogger.googleusercontent.com/img/a/AVvXsEiqV8QiI-kiTFfd7Aqm5-JjxGOrxYPRJ568gGkeMVQ5pe6EJLyQb77iaztmC7pFSTa0UglxZeKunFA-nlk6kpw1U8_GICQTG6096qeCqxTG3PdBtg5Jdt67b7e2NrgDglKyQE-CzdSLkDQk2PP6Vp1hmcf8nB1ICh4GgYhNAFtl8nbAbKZcV54UpjHwfbVB">
-  <!-- Font Awesome للأيقونات -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    :root {
-      --primary: #1d3557;
-      --secondary: #457b9d;
-      --accent: #e63946;
-      --light: #f1faee;
-      --text: #2c3e50;
-      --text-light: #7f8c8d;
-      --white: #ffffff;
-      --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-      --transition: all 0.4s ease;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DEENWAY Contact - اتصل بنا">
+    
+    <!-- SEO Meta Tags -->
+    <title>DEENWAY Contact | اتصل بنا</title>
+    <meta name="title" content="DEENWAY Contact | اتصل بنا">
+    <meta name="description" content="تواصل مع DEENWAY عبر وسائل التواصل المختلفة">
+    <meta name="keywords" content="DEENWAY, اتصل بنا, تواصل, ارسل رسالة, واتساب, بريد إلكتروني, وسائل تواصل">
+    <meta property="og:title" content="DEENWAY Contact | اتصل بنا">
+    <meta property="og:description" content="تواصل مع DEENWAY عبر وسائل التواصل المختلفة">
+    <meta property="og:url" content="https://contact.ondeenway.org">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEiqV8QiI-kiTFfd7Aqm5-JjxGOrxYPRJ568gGkeMVQ5pe6EJLyQb77iaztmC7pFSTa0UglxZeKunFA-nlk6kpw1U8_GICQTG6096qeCqxTG3PdBtg5Jdt67b7e2NrgDglKyQE-CzdSLkDQk2PP6Vp1hmcf8nB1ICh4GgYhNAFtl8nbAbKZcV54UpjHwfbVB">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "DEENWAY Contact",
+      "alternateName": "اتصل بنا",
+      "url": "https://contact.ondeenway.org",
+      "description": "تواصل مع DEENWAY عبر وسائل التواصل المختلفة",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DEENWAY",
+        "url": "https://www.ondeenway.org"
+      },
+      "inLanguage": "ar"
     }
+    </script>
+    
+    <!-- رابط الموقع الأم -->
+    <link rel="canonical" href="https://contact.ondeenway.org">
+    <link rel="alternate" hreflang="ar" href="https://contact.ondeenway.org">
+    
+    <!-- الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&family=El+Messiri:wght@400;500;600;700&family=Amiri:wght@400;700&family=Lateef:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* CSS Reset وتحسينات عامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+        :root {
+            --primary-color: #1a5f4b;
+            --secondary-color: #0d3b2e;
+            --accent-color: #d4af37;
+            --accent-light: #f2e8c9;
+            --light-color: #f8f9fa;
+            --dark-color: #1a2c3a;
+            --gray-color: #5d6d7e;
+            --light-gray: #f1f3f5;
+            --border-radius: 12px;
+            --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.4s ease;
+            --hero-gradient: linear-gradient(135deg, #1a5f4b 0%, #0d3b2e 100%);
+            --email-gradient: linear-gradient(135deg, #e63946 0%, #ff6b6b 100%);
+            --whatsapp-gradient: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            --facebook-gradient: linear-gradient(135deg, #1877F2 0%, #0d5fd8 100%);
+            --instagram-gradient: linear-gradient(135deg, #E4405F 0%, #833AB4 100%);
+        }
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #f9fbfc 0%, #e8f4f8 100%);
-      color: var(--text);
-      line-height: 1.6;
-      min-height: 100vh;
-      overflow-x: hidden;
-      display: flex;
-      flex-direction: column;
-    }
+        html {
+            scroll-behavior: smooth;
+        }
 
-    /* الهيدر المحسن */
-    .header {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      padding: 20px 0;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      position: relative;
-      overflow: hidden;
-    }
+        body {
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #fefefe;
+            direction: rtl;
+            text-align: right;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-    .header::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, var(--accent), #ff9a9e, var(--accent));
-      background-size: 200% 100%;
-      animation: shimmer 3s ease-in-out infinite;
-    }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
 
-    .header-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      position: relative;
-      z-index: 2;
-    }
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
 
-    .logo-container {
-      position: relative;
-      text-align: center;
-    }
+        a:hover {
+            color: var(--secondary-color);
+        }
 
-    .logo {
-      font-size: 48px;
-      font-weight: 900;
-      color: var(--light);
-      letter-spacing: 3px;
-      user-select: none;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-      position: relative;
-      z-index: 2;
-      transition: var(--transition);
-    }
+        ul {
+            list-style: none;
+        }
 
-    .logo:hover {
-      transform: scale(1.05);
-      text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+        }
 
-    .logo-decoration {
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255,255,255,0) 70%);
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1;
-    }
+        h1, h2, h3, h4 {
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
 
-    .tagline {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--light);
-      text-align: center;
-      padding: 8px 20px;
-      border-radius: 20px;
-      background: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
 
-    /* تصميم قائمة اللغات المحسن */
-    .language-select {
-      margin: 20px 0;
-      position: relative;
-      width: 280px;
-      z-index: 10;
-    }
+        .section {
+            padding: 60px 0;
+            flex: 1;
+        }
 
-    select {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      width: 100%;
-      padding: 14px 50px 14px 20px;
-      font-size: 16px;
-      font-weight: 600;
-      border: none;
-      border-radius: 30px;
-      background: rgba(255, 255, 255, 0.9);
-      color: var(--primary);
-      cursor: pointer;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-      outline: none;
-      transition: var(--transition);
-      z-index: 11;
-      position: relative;
-      border: 2px solid transparent;
-    }
+        .section-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-    /* إصلاح مشكلة عرض الخيارات */
-    select option {
-      background: white;
-      color: var(--text);
-      font-size: 16px;
-      padding: 12px 20px;
-      direction: ltr;
-    }
+        .section-title {
+            font-size: 2rem;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
 
-    select:hover, select:focus {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      border-color: var(--accent);
-    }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            bottom: -10px;
+            right: 50%;
+            transform: translateX(50%);
+            border-radius: 5px;
+        }
 
-    .language-select::after {
-      content: "▼";
-      position: absolute;
-      top: 50%;
-      right: 20px;
-      transform: translateY(-50%);
-      color: var(--primary);
-      pointer-events: none;
-      font-size: 14px;
-      font-weight: 700;
-      user-select: none;
-      transition: var(--transition);
-      z-index: 12;
-    }
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--gray-color);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
 
-    .language-select:hover::after {
-      transform: translateY(-50%) scale(1.2);
-    }
+        .highlight {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
 
-    /* المحتوى الرئيسي */
-    .main-content {
-      flex: 1;
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            text-align: center;
+        }
 
-    .page-header {
-      text-align: center;
-      margin-bottom: 50px;
-      position: relative;
-    }
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+            border: 2px solid var(--primary-color);
+        }
 
-    .page-title {
-      font-size: 42px;
-      font-weight: 900;
-      background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 15px;
-      letter-spacing: 1px;
-    }
+        .btn-primary:hover {
+            background: var(--secondary-color);
+            border-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
 
-    .page-subtitle {
-      font-size: 18px;
-      color: var(--text-light);
-      max-width: 600px;
-      margin: 0 auto;
-    }
+        /* الهيدر */
+        .main-header {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 30px rgba(0, 0, 0, 0.08);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 12px 0;
+            backdrop-filter: blur(10px);
+            transform: translateY(0);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
 
-    .page-header::after {
-      content: "";
-      position: absolute;
-      bottom: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 4px;
-      background: linear-gradient(90deg, var(--primary), var(--accent));
-      border-radius: 2px;
-    }
+        .main-header.scrolled {
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+        }
 
-    /* شبكة طرق التواصل - 2 في السطر */
-    .contact-methods {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
-      margin-bottom: 40px;
-      width: 100%;
-      max-width: 1000px;
-    }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    .contact-card {
-      background: var(--white);
-      border-radius: 20px;
-      padding: 35px 30px;
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      border-top: 5px solid var(--primary);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 320px;
-    }
+        .logo {
+            display: flex;
+            flex-direction: column;
+        }
 
-    .contact-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-    }
+        .logo h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
 
-    .contact-card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 5px;
-      background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
-    }
+        .logo-highlight {
+            color: var(--primary-color);
+            position: relative;
+        }
 
-    .contact-icon {
-      font-size: 60px;
-      margin-bottom: 20px;
-      display: block;
-    }
+        .logo-highlight::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), transparent);
+            bottom: -2px;
+            right: 0;
+        }
 
-    .contact-title {
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: 15px;
-    }
+        .tagline {
+            font-size: 0.8rem;
+            color: var(--gray-color);
+            margin-bottom: 0;
+            font-style: italic;
+        }
 
-    .contact-desc {
-      color: var(--text-light);
-      margin-bottom: 20px;
-      line-height: 1.7;
-    }
+        /* البانر الرئيسي */
+        .hero {
+            background: var(--hero-gradient);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
 
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 12px 28px;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: 600;
-      transition: var(--transition);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
 
-    .contact-link:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
 
-    /* الفوتر المبسط */
-    footer {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-      width: 100%;
-      position: relative;
-      overflow: hidden;
-    }
+        .hero-title {
+            font-family: 'El Messiri', 'Tajawal', sans-serif;
+            font-size: 2.2rem;
+            color: white;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            font-weight: 600;
+            line-height: 1.4;
+            padding: 0 15px;
+        }
 
-    footer::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, var(--accent), #ff9a9e, var(--accent));
-      background-size: 200% 100%;
-      animation: shimmer 3s ease-in-out infinite;
-    }
+        /* قسم طرق التواصل */
+        .contact-section {
+            background-color: #f8f5e6;
+        }
 
-    @keyframes shimmer {
-      0% { background-position: -200% 0; }
-      100% { background-position: 200% 0; }
-    }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
 
-    .footer-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 2;
-    }
+        .contact-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 35px;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            border: 1px solid var(--light-gray);
+            text-align: center;
+            cursor: pointer;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
 
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
 
-    .footer-links a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 16px;
-      padding: 12px 24px;
-      border-radius: 25px;
-      transition: var(--transition);
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      min-width: 160px;
-      justify-content: center;
-    }
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 5px;
+            z-index: 1;
+        }
 
-    .footer-links a:hover {
-      background: rgba(255, 255, 255, 0.15);
-      transform: translateY(-3px);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    }
+        .card-email::before {
+            background: var(--email-gradient);
+        }
 
-    .footer-decoration {
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255,255,255,0) 70%);
-      z-index: 1;
-    }
+        .card-whatsapp::before {
+            background: var(--whatsapp-gradient);
+        }
 
-    .footer-decoration:nth-child(1) {
-      top: -50px;
-      left: -50px;
-    }
+        .card-facebook::before {
+            background: var(--facebook-gradient);
+        }
 
-    .footer-decoration:nth-child(2) {
-      bottom: -50px;
-      right: -50px;
-      width: 150px;
-      height: 150px;
-    }
+        .card-instagram::before {
+            background: var(--instagram-gradient);
+        }
 
-    /* تأثيرات الخلفية */
-    .bg-decoration {
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(69, 123, 157, 0.1) 0%, rgba(255,255,255,0) 70%);
-      z-index: -1;
-    }
+        .contact-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2.5rem;
+            color: white;
+            z-index: 2;
+        }
 
-    .bg-decoration:nth-child(1) {
-      top: 10%;
-      left: 5%;
-    }
+        .card-email .contact-icon {
+            background: var(--email-gradient);
+        }
 
-    .bg-decoration:nth-child(2) {
-      bottom: 10%;
-      right: 5%;
-      width: 200px;
-      height: 200px;
-      background: radial-gradient(circle, rgba(230, 57, 70, 0.1) 0%, rgba(255,255,255,0) 70%);
-    }
+        .card-whatsapp .contact-icon {
+            background: var(--whatsapp-gradient);
+        }
 
-    /* تصميم متجاوب للهواتف */
-    @media (max-width: 768px) {
-      .logo {
-        font-size: 32px;
-      }
+        .card-facebook .contact-icon {
+            background: var(--facebook-gradient);
+        }
 
-      .tagline {
-        font-size: 14px;
-        padding: 6px 15px;
-      }
+        .card-instagram .contact-icon {
+            background: var(--instagram-gradient);
+        }
 
-      .page-title {
-        font-size: 32px;
-      }
-      
-      .page-subtitle {
-        font-size: 16px;
-      }
-      
-      .contact-methods {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-      
-      .footer-links {
-        gap: 15px;
-        flex-direction: column;
-        align-items: center;
-      }
+        .contact-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            z-index: 2;
+        }
 
-      .footer-links a {
-        min-width: 200px;
-      }
+        .card-email h3 {
+            color: #e63946;
+        }
 
-      .bg-decoration {
-        display: none;
-      }
-    }
+        .card-whatsapp h3 {
+            color: #25D366;
+        }
 
-    /* تأثيرات الظهور */
-    .fade-in {
-      animation: fadeIn 0.8s ease forwards;
-    }
+        .card-facebook h3 {
+            color: #1877F2;
+        }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
+        .card-instagram h3 {
+            color: #E4405F;
+        }
+
+        .contact-card p {
+            color: var(--gray-color);
+            margin-bottom: 25px;
+            font-size: 1rem;
+            line-height: 1.6;
+            z-index: 2;
+            flex: 1;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px 30px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            text-align: center;
+            z-index: 2;
+            text-decoration: none;
+            width: 100%;
+            max-width: 200px;
+        }
+
+        .card-email .contact-btn {
+            background: var(--email-gradient);
+            color: white;
+        }
+
+        .card-whatsapp .contact-btn {
+            background: var(--whatsapp-gradient);
+            color: white;
+        }
+
+        .card-facebook .contact-btn {
+            background: var(--facebook-gradient);
+            color: white;
+        }
+
+        .card-instagram .contact-btn {
+            background: var(--instagram-gradient);
+            color: white;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* قسم اللغات */
+        .language-selector {
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .language-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .lang-btn {
+            padding: 10px 20px;
+            border: 2px solid var(--light-gray);
+            background: white;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--dark-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .lang-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .lang-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .lang-btn.active:hover {
+            background: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        /* زر العودة للأعلى */
+        .back-to-top {
+            position: fixed;
+            bottom: 15px;
+            left: 15px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 999;
+            box-shadow: 0 4px 15px rgba(26, 95, 75, 0.3);
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(26, 95, 75, 0.4);
+        }
+
+        /* تأثير التمرير على الهيدر */
+        .header-spacer {
+            height: 60px;
+        }
+
+        /* الفوتر */
+        .main-footer {
+            background: linear-gradient(135deg, var(--dark-color) 0%, #2c3e50 100%);
+            color: white;
+            padding: 50px 0 20px;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--accent-color);
+        }
+
+        .footer-section p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+            transform: translateX(-5px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+        }
+
+        .footer-bottom p {
+            margin-bottom: 5px;
+        }
+
+        /* تحسينات للتجاوب مع الشاشات الصغيرة */
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 95%;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .section {
+                padding: 50px 0;
+            }
+            
+            .contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .contact-card {
+                padding: 30px;
+                min-height: 300px;
+            }
+            
+            .language-buttons {
+                gap: 8px;
+            }
+            
+            .lang-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 100px 0 50px;
+                min-height: 70vh;
+            }
+            
+            .hero-title {
+                font-size: 1.6rem;
+                padding: 0 10px;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1rem;
+            }
+            
+            .logo h1 {
+                font-size: 1.3rem;
+            }
+            
+            .back-to-top {
+                bottom: 10px;
+                left: 10px;
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            .contact-card {
+                padding: 25px;
+                min-height: 280px;
+            }
+            
+            .contact-icon {
+                width: 70px;
+                height: 70px;
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+            
+            .language-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .lang-btn {
+                width: 100%;
+                max-width: 200px;
+                justify-content: center;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 10px;
+            }
+            
+            .hero {
+                padding: 90px 0 40px;
+            }
+            
+            .hero-title {
+                font-size: 1.4rem;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .section {
+                padding: 40px 0;
+            }
+            
+            .contact-card {
+                padding: 20px;
+                min-height: 260px;
+            }
+            
+            .contact-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.8rem;
+            }
+            
+            .contact-card h3 {
+                font-size: 1.2rem;
+            }
+            
+            .contact-card p {
+                font-size: 0.95rem;
+            }
+            
+            .contact-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+                max-width: 180px;
+            }
+            
+            .language-selector {
+                padding: 20px 15px;
+            }
+            
+            .lang-btn {
+                padding: 8px 14px;
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .logo h1 {
+                font-size: 1.1rem;
+            }
+            
+            .tagline {
+                font-size: 0.7rem;
+            }
+            
+            .hero-title {
+                font-size: 1.3rem;
+            }
+            
+            .contact-card h3 {
+                font-size: 1.1rem;
+            }
+            
+            .contact-card p {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* تحسين الأداء والرسوم المتحركة */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="bg-decoration"></div>
-  <div class="bg-decoration"></div>
-  
-  <!-- الهيدر المحسن -->
-  <header class="header">
-    <div class="header-content">
-      <div class="logo-container">
-        <div class="logo-decoration"></div>
-        <div class="logo fade-in">DEENWAY</div>
-      </div>
-      
-      <div class="tagline fade-in">One truth — eight languages</div>
-
-      <div class="language-select fade-in">
-        <select id="languageDropdown" onchange="changeLanguage(this.value)">
-          <option value="ar" selected>العربية</option>
-          <option value="fr">Français</option>
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="de">Deutsch</option>
-          <option value="tr">Türkçe</option>
-          <option value="id">Bahasa Indonesia</option>
-          <option value="ur">اردو</option>
-        </select>
-      </div>
-    </div>
-  </header>
-
-  <!-- المحتوى الرئيسي -->
-  <div class="main-content">
-    <header class="page-header fade-in">
-      <h1 class="page-title" id="pageTitle">اتصل بنا</h1>
-      <p class="page-subtitle" id="pageSubtitle">نحن هنا للإجابة على استفساراتك وتلقي ملاحظاتك. تواصل معنا بأي طريقة تناسبك</p>
+    <!-- الهيدر -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="https://contact.ondeenway.org" style="color: inherit; text-decoration: none;">
+                        <h1>DEENWAY <span class="logo-highlight">Contact</span></h1>
+                        <p class="tagline">تواصل معنا - متعدد اللغات</p>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- طرق التواصل - 2 في السطر -->
-    <section class="contact-methods fade-in">
-      <div class="contact-card">
-        <i class="contact-icon fas fa-envelope" style="color: #e63946;"></i>
-        <h3 class="contact-title" id="emailTitle">البريد الإلكتروني</h3>
-        <p class="contact-desc" id="emailDesc">أرسل رسالتك إلينا عبر البريد الإلكتروني وسنرد عليك خلال 24 ساعة بإذن الله</p>
-        <a href="mailto:contact@ondeenway.org" class="contact-link">
-          <i class="fas fa-paper-plane"></i>
-          <span id="emailLink">إرسال بريد</span>
-        </a>
-      </div>
-      
-      <div class="contact-card">
-        <i class="contact-icon fab fa-whatsapp" style="color: #25D366;"></i>
-        <h3 class="contact-title" id="whatsappTitle">واتساب</h3>
-        <p class="contact-desc" id="whatsappDesc">تواصل معنا عبر واتساب للحصول على إجابات سريعة لاستفساراتك بإذن الله</p>
-        <a href="https://wa.me/212649106356" target="_blank" class="contact-link">
-          <i class="fab fa-whatsapp"></i>
-          <span id="whatsappLink">تواصل عبر واتساب</span>
-        </a>
-      </div>
-      
-      <div class="contact-card">
-        <i class="contact-icon fab fa-facebook" style="color: #1877F2;"></i>
-        <h3 class="contact-title" id="facebookTitle">فيسبوك</h3>
-        <p class="contact-desc" id="facebookDesc">تواصل معنا على فيسبوك للاستفسارات والمتابعة</p>
-        <a href="https://facebook.com/ondeenwayorg" target="_blank" class="contact-link">
-          <i class="fab fa-facebook-f"></i>
-          <span id="facebookLink">تواصل على فيسبوك</span>
-        </a>
-      </div>
+    <!-- مسافة للهيدر الثابت -->
+    <div class="header-spacer"></div>
 
-      <div class="contact-card">
-        <i class="contact-icon fab fa-instagram" style="color: #E4405F;"></i>
-        <h3 class="contact-title" id="instagramTitle">إنستغرام</h3>
-        <p class="contact-desc" id="instagramDesc">تواصل معنا على إنستغرام لمتابعة آخر المستجدات</p>
-        <a href="https://instagram.com/ondeenwayorg" target="_blank" class="contact-link">
-          <i class="fab fa-instagram"></i>
-          <span id="instagramLink">تواصل على إنستغرام</span>
-        </a>
-      </div>
+    <!-- البانر الرئيسي -->
+    <section class="hero" id="heroSection">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">تواصل مع <span style="color: var(--accent-color);">DEENWAY</span><br>نحن هنا للإجابة على استفساراتك</h2>
+                <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.9); margin-bottom: 30px;">One truth — eight languages | حقيقة واحدة — ثماني لغات</p>
+                <button onclick="scrollToContact()" class="btn btn-primary" id="exploreBtn">وسائل التواصل</button>
+            </div>
+        </div>
     </section>
-  </div>
 
-  <!-- الفوتر المبسط -->
-  <footer>
-    <div class="footer-decoration"></div>
-    <div class="footer-decoration"></div>
-    
-    <div class="footer-content">
-      <div class="footer-links">
-        <a href="https://www.ondeenway.org/" target="_blank">
-          <i class="fas fa-home"></i>
-          <span id="footerHome">الموقع الرسمي</span>
-        </a>
-        <a href="https://faq.ondeenway.org/" target="_blank">
-          <i class="fas fa-question-circle"></i>
-          <span id="footerFaq">الأسئلة الشائعة</span>
-        </a>
-        <a href="https://ebook.ondeenway.org/" target="_blank">
-          <i class="fas fa-book"></i>
-          <span id="footerLibrary">مكتبة DEENWAY</span>
-        </a>
-        <a href="https://about.ondeenway.org/" target="_blank">
-          <i class="fas fa-info-circle"></i>
-          <span id="footerAbout">من نحن</span>
-        </a>
-      </div>
+    <!-- قسم اللغات -->
+    <section class="section">
+        <div class="container">
+            <div class="language-selector">
+                <h3 style="margin-bottom: 20px; color: var(--primary-color);">اختر اللغة المفضلة</h3>
+                <div class="language-buttons" id="languageButtons">
+                    <!-- سيتم ملؤها ديناميكياً -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم طرق التواصل -->
+    <section id="contactSection" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="pageTitle">اتصل بنا</h2>
+                <p class="section-subtitle" id="pageSubtitle">نحن هنا للإجابة على استفساراتك وتلقي ملاحظاتك. تواصل معنا بأي طريقة تناسبك</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- البريد الإلكتروني -->
+                <div class="contact-card card-email">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h3 id="emailTitle">البريد الإلكتروني</h3>
+                        <p id="emailDesc">أرسل رسالتك إلينا عبر البريد الإلكتروني وسنرد عليك خلال 24 ساعة بإذن الله</p>
+                    </div>
+                    <a href="mailto:contact@ondeenway.org" class="contact-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        <span id="emailLink">إرسال بريد</span>
+                    </a>
+                </div>
+                
+                <!-- واتساب -->
+                <div class="contact-card card-whatsapp">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div>
+                        <h3 id="whatsappTitle">واتساب</h3>
+                        <p id="whatsappDesc">تواصل معنا عبر واتساب للحصول على إجابات سريعة لاستفساراتك بإذن الله</p>
+                    </div>
+                    <a href="https://wa.me/212649106356" target="_blank" class="contact-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span id="whatsappLink">تواصل عبر واتساب</span>
+                    </a>
+                </div>
+                
+                <!-- فيسبوك -->
+                <div class="contact-card card-facebook">
+                    <div class="contact-icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div>
+                        <h3 id="facebookTitle">فيسبوك</h3>
+                        <p id="facebookDesc">تواصل معنا على فيسبوك للاستفسارات والمتابعة</p>
+                    </div>
+                    <a href="https://facebook.com/ondeenwayorg" target="_blank" class="contact-btn">
+                        <i class="fab fa-facebook-f"></i>
+                        <span id="facebookLink">تواصل على فيسبوك</span>
+                    </a>
+                </div>
+                
+                <!-- إنستغرام -->
+                <div class="contact-card card-instagram">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div>
+                        <h3 id="instagramTitle">إنستغرام</h3>
+                        <p id="instagramDesc">تواصل معنا على إنستغرام لمتابعة آخر المستجدات</p>
+                    </div>
+                    <a href="https://instagram.com/ondeenwayorg" target="_blank" class="contact-btn">
+                        <i class="fab fa-instagram"></i>
+                        <span id="instagramLink">تواصل على إنستغرام</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DEENWAY Contact</h3>
+                    <p>تواصل معنا عبر وسائل التواصل المختلفة. نحن هنا للإجابة على استفساراتك وتلقي ملاحظاتك.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>مشاريع DEENWAY</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://quran.ondeenway.org" target="_blank"><i class="fas fa-quran"></i>DEENWAY Quran</a></li>
+                        <li><a href="https://hadith.ondeenway.org" target="_blank"><i class="fas fa-book-open"></i>DEENWAY Hadith</a></li>
+                        <li><a href="https://seerah.ondeenway.org" target="_blank"><i class="fas fa-user"></i>DEENWAY Seerah</a></li>
+                        <li><a href="https://azkar.ondeenway.org" target="_blank"><i class="fas fa-pray"></i>DEENWAY Azkar</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>صفحات مهمة</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.ondeenway.org" target="_blank"><i class="fas fa-globe"></i>الموقع الرسمي</a></li>
+                        <li><a href="https://about.ondeenway.org" target="_blank"><i class="fas fa-info-circle"></i>من نحن</a></li>
+                        <li><a href="https://ebook.ondeenway.org" target="_blank"><i class="fas fa-book"></i>مكتبة DEENWAY</a></li>
+                        <li><a href="https://faq.ondeenway.org" target="_blank"><i class="fas fa-question-circle"></i>الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>تابعنا</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.instagram.com/ondeenwayorg"><i class="fab fa-instagram"></i>انستغرام</a></li>
+                        <li><a href="https://www.facebook.com/ondeenwayorg"><i class="fab fa-facebook"></i>فيسبوك</a></li>
+                        <li><a href="https://www.tiktok.com/@ondeenwayorg"><i class="fab fa-tiktok"></i>تيكتوك</a></li>
+                        <li><a href="https://wa.me/212649106356"><i class="fab fa-whatsapp"></i>واتساب</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>إن أصبت فمن الله، وإن أخطأت فمن نفسي والشيطان</p>
+                <!-- تم إزالة عبارة الحقوق المحفوظة -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
     </div>
-  </footer>
 
-  <script>
-    // بيانات النصوص بجميع اللغات
-    const pageTitles = {
-      ar: "اتصل بنا",
-      fr: "Contactez-nous",
-      en: "Contact Us",
-      es: "Contáctenos",
-      de: "Kontaktieren Sie uns",
-      tr: "Bize Ulaşın",
-      id: "Hubungi Kami",
-      ur: "ہم سے رابطہ کریں"
-    };
+    <script>
+        // بيانات الصفحة بلغات مختلفة
+        const pageData = {
+            ar: {
+                title: "اتصل بنا",
+                subtitle: "نحن هنا للإجابة على استفساراتك وتلقي ملاحظاتك. تواصل معنا بأي طريقة تناسبك",
+                contactCards: {
+                    email: {
+                        title: "البريد الإلكتروني",
+                        desc: "أرسل رسالتك إلينا عبر البريد الإلكتروني وسنرد عليك خلال 24 ساعة بإذن الله",
+                        link: "إرسال بريد"
+                    },
+                    whatsapp: {
+                        title: "واتساب",
+                        desc: "تواصل معنا عبر واتساب للحصول على إجابات سريعة لاستفساراتك بإذن الله",
+                        link: "تواصل عبر واتساب"
+                    },
+                    facebook: {
+                        title: "فيسبوك",
+                        desc: "تواصل معنا على فيسبوك للاستفسارات والمتابعة",
+                        link: "تواصل على فيسبوك"
+                    },
+                    instagram: {
+                        title: "إنستغرام",
+                        desc: "تواصل معنا على إنستغرام لمتابعة آخر المستجدات",
+                        link: "تواصل على إنستغرام"
+                    }
+                }
+            },
+            en: {
+                title: "Contact Us",
+                subtitle: "We're here to answer your questions and receive your feedback. Contact us in any way that suits you",
+                contactCards: {
+                    email: {
+                        title: "Email",
+                        desc: "Send us your message via email and we will respond to you within 24 hours, God willing",
+                        link: "Send Email"
+                    },
+                    whatsapp: {
+                        title: "WhatsApp",
+                        desc: "Contact us via WhatsApp for quick answers to your inquiries, God willing",
+                        link: "Contact via WhatsApp"
+                    },
+                    facebook: {
+                        title: "Facebook",
+                        desc: "Contact us on Facebook for inquiries and follow-up",
+                        link: "Contact on Facebook"
+                    },
+                    instagram: {
+                        title: "Instagram",
+                        desc: "Contact us on Instagram to follow the latest updates",
+                        link: "Contact on Instagram"
+                    }
+                }
+            },
+            fr: {
+                title: "Contactez-nous",
+                subtitle: "Nous sommes là pour répondre à vos questions et recevoir vos commentaires. Contactez-nous de la manière qui vous convient le mieux",
+                contactCards: {
+                    email: {
+                        title: "E-mail",
+                        desc: "Envoyez-nous votre message par e-mail et nous vous répondrons dans les 24 heures, si Dieu le veut",
+                        link: "Envoyer un e-mail"
+                    },
+                    whatsapp: {
+                        title: "WhatsApp",
+                        desc: "Contactez-nous via WhatsApp pour des réponses rapides à vos questions, si Dieu le veut",
+                        link: "Contacter via WhatsApp"
+                    },
+                    facebook: {
+                        title: "Facebook",
+                        desc: "Contactez-nous sur Facebook pour des questions et suivi",
+                        link: "Contacter sur Facebook"
+                    },
+                    instagram: {
+                        title: "Instagram",
+                        desc: "Contactez-nous sur Instagram pour suivre les dernières mises à jour",
+                        link: "Contacter sur Instagram"
+                    }
+                }
+            },
+            es: {
+                title: "Contáctenos",
+                subtitle: "Estamos aquí para responder a sus preguntas y recibir sus comentarios. Contáctenos de la forma que más le convenga",
+                contactCards: {
+                    email: {
+                        title: "Correo electrónico",
+                        desc: "Envíenos su mensaje por correo electrónico y le responderemos en 24 horas, si Dios quiere",
+                        link: "Enviar correo"
+                    },
+                    whatsapp: {
+                        title: "WhatsApp",
+                        desc: "Contáctenos por WhatsApp para obtener respuestas rápidas a sus consultas, si Dios quiere",
+                        link: "Contactar por WhatsApp"
+                    },
+                    facebook: {
+                        title: "Facebook",
+                        desc: "Contáctenos en Facebook para consultas y seguimiento",
+                        link: "Contactar en Facebook"
+                    },
+                    instagram: {
+                        title: "Instagram",
+                        desc: "Contáctenos en Instagram para seguir las últimas actualizaciones",
+                        link: "Contactar en Instagram"
+                    }
+                }
+            },
+            de: {
+                title: "Kontaktieren Sie uns",
+                subtitle: "Wir sind hier, um Ihre Fragen zu beantworten und Ihr Feedback zu erhalten. Kontaktieren Sie uns auf die für Sie passende Weise",
+                contactCards: {
+                    email: {
+                        title: "E-Mail",
+                        desc: "Senden Sie uns Ihre Nachricht per E-Mail und wir antworten Ihnen innerhalb von 24 Stunden, so Gott will",
+                        link: "E-Mail senden"
+                    },
+                    whatsapp: {
+                        title: "WhatsApp",
+                        desc: "Kontaktieren Sie uns über WhatsApp für schnelle Antworten auf Ihre Anfragen, so Gott will",
+                        link: "Kontakt per WhatsApp"
+                    },
+                    facebook: {
+                        title: "Facebook",
+                        desc: "Kontaktieren Sie uns auf Facebook für Anfragen und Follow-up",
+                        link: "Kontakt auf Facebook"
+                    },
+                    instagram: {
+                        title: "Instagram",
+                        desc: "Kontaktieren Sie uns auf Instagram, um die neuesten Updates zu verfolgen",
+                        link: "Kontakt auf Instagram"
+                    }
+                }
+            },
+            tr: {
+                title: "Bize Ulaşın",
+                subtitle: "Sorularınızı yanıtlamak ve geri bildirimlerinizi almak için buradayız. Size uygun herhangi bir şekilde bizimle iletişime geçin",
+                contactCards: {
+                    email: {
+                        title: "E-posta",
+                        desc: "Bize e-posta yoluyla mesajınızı gönderin, 24 saat içinde size yanıt vereceğiz, inşallah",
+                        link: "E-posta Gönder"
+                    },
+                    whatsapp: {
+                        title: "WhatsApp",
+                        desc: "Sorularınız için hızlı yanıtlar almak üzere WhatsApp üzerinden bizimle iletişime geçin, inşallah",
+                        link: "WhatsApp ile İletişim"
+                    },
+                    facebook: {
+                        title: "Facebook",
+                        desc: "Soru ve takipler için bizimle Facebook'ta iletişime geçin",
+                        link: "Facebook'ta İletişim"
+                    },
+                    instagram: {
+                        title: "Instagram",
+                        desc: "En son güncellemeleri takip etmek için bizimle Instagram'da iletişime geçin",
+                        link: "Instagram'da İletişim"
+                    }
+                }
+            },
+            id: {
+                title: "Hubungi Kami",
+                subtitle: "Kami di sini untuk menjawab pertanyaan Anda dan menerima masukan Anda. Hubungi kami dengan cara apa pun yang sesuai untuk Anda",
+                contactCards: {
+                    email: {
+                        title: "Email",
+                        desc: "Kirimkan pesan Anda kepada kami melalui email dan kami akan merespons dalam 24 jam, insya Allah",
+                        link: "Kirim Email"
+                    },
+                    whatsapp: {
+                        title: "WhatsApp",
+                        desc: "Hubungi kami melalui WhatsApp untuk jawaban cepat atas pertanyaan Anda, insya Allah",
+                        link: "Hubungi via WhatsApp"
+                    },
+                    facebook: {
+                        title: "Facebook",
+                        desc: "Hubungi kami di Facebook untuk pertanyaan dan tindak lanjut",
+                        link: "Hubungi di Facebook"
+                    },
+                    instagram: {
+                        title: "Instagram",
+                        desc: "Hubungi kami di Instagram untuk mengikuti pembaruan terbaru",
+                        link: "Hubungi di Instagram"
+                    }
+                }
+            },
+            ur: {
+                title: "ہم سے رابطہ کریں",
+                subtitle: "ہم آپ کے سوالات کے جوابات دینے اور آپ کی رائے حاصل کرنے کے لیے یہاں موجود ہیں۔ ہم سے کسی بھی طریقے سے رابطہ کریں جو آپ کے لیے موزوں ہو",
+                contactCards: {
+                    email: {
+                        title: "ای میل",
+                        desc: "ہمیں ای میل کے ذریعے اپنا پیغام بھیجیں اور ہم 24 گھنٹوں کے اندر آپ کو جواب دیں گے، ان شاء اللہ",
+                        link: "ای میل بھیجیں"
+                    },
+                    whatsapp: {
+                        title: "واٹس ایپ",
+                        desc: "اپنے سوالات کے فوری جوابات کے لیے واٹس ایپ کے ذریعے ہم سے رابطہ کریں، ان شاء اللہ",
+                        link: "واٹس ایپ کے ذریعے رابطہ کریں"
+                    },
+                    facebook: {
+                        title: "فیس بک",
+                        desc: "سوالات اور فالو اپ کے لیے ہم سے فیس بک پر رابطہ کریں",
+                        link: "فیس بک پر رابطہ کریں"
+                    },
+                    instagram: {
+                        title: "انسٹاگرام",
+                        desc: "تازہ ترین اپ ڈیٹس کی پیروی کے لیے ہم سے انسٹاگرام پر رابطہ کریں",
+                        link: "انسٹاگرام پر رابطہ کریں"
+                    }
+                }
+            }
+        };
 
-    const pageSubtitles = {
-      ar: "نحن هنا للإجابة على استفساراتك وتلقي ملاحظاتك. تواصل معنا بأي طريقة تناسبك",
-      fr: "Nous sommes là pour répondre à vos questions et recevoir vos commentaires. Contactez-nous de la manière qui vous convient le mieux",
-      en: "We're here to answer your questions and receive your feedback. Contact us in any way that suits you",
-      es: "Estamos aquí para responder a sus preguntas y recibir sus comentarios. Contáctenos de la forma que más le convenga",
-      de: "Wir sind hier, um Ihre Fragen zu beantworten und Ihr Feedback zu erhalten. Kontaktieren Sie uns auf die für Sie passende Weise",
-      tr: "Sorularınızı yanıtlamak ve geri bildirimlerinizi almak için buradayız. Size uygun herhangi bir şekilde bizimle iletişime geçin",
-      id: "Kami di sini untuk menjawab pertanyaan Anda dan menerima masukan Anda. Hubungi kami dengan cara apa pun yang sesuai untuk Anda",
-      ur: "ہم آپ کے سوالات کے جوابات دینے اور آپ کی رائے حاصل کرنے کے لیے یہاں موجود ہیں۔ ہم سے کسی بھی طریقے سے رابطہ کریں جو آپ کے لیے موزوں ہو"
-    };
+        // أعلام اللغات
+        const languageFlags = {
+            ar: "🇸🇦",
+            fr: "🇫🇷",
+            en: "🇬🇧",
+            es: "🇪🇸",
+            de: "🇩🇪",
+            tr: "🇹🇷",
+            id: "🇮🇩",
+            ur: "🇵🇰"
+        };
 
-    // بيانات بطاقات الاتصال
-    const contactData = {
-      email: {
-        title: {
-          ar: "البريد الإلكتروني",
-          fr: "E-mail",
-          en: "Email",
-          es: "Correo electrónico",
-          de: "E-Mail",
-          tr: "E-posta",
-          id: "Email",
-          ur: "ای میل"
-        },
-        desc: {
-          ar: "أرسل رسالتك إلينا عبر البريد الإلكتروني وسنرد عليك خلال 24 ساعة بإذن الله",
-          fr: "Envoyez-nous votre message par e-mail et nous vous répondrons dans les 24 heures, si Dieu le veut",
-          en: "Send us your message via email and we will respond to you within 24 hours, God willing",
-          es: "Envíenos su mensaje por correo electrónico y le responderemos en 24 horas, si Dios quiere",
-          de: "Senden Sie uns Ihre Nachricht per E-Mail und wir antworten Ihnen innerhalb von 24 Stunden, so Gott will",
-          tr: "Bize e-posta yoluyla mesajınızı gönderin, 24 saat içinde size yanıt vereceğiz, inşallah",
-          id: "Kirimkan pesan Anda kepada kami melalui email dan kami akan merespons dalam 24 jam, insya Allah",
-          ur: "ہمیں ای میل کے ذریعے اپنا پیغام بھیجیں اور ہم 24 گھنٹوں کے اندر آپ کو جواب دیں گے، ان شاء اللہ"
-        },
-        link: {
-          ar: "إرسال بريد",
-          fr: "Envoyer un e-mail",
-          en: "Send Email",
-          es: "Enviar correo",
-          de: "E-Mail senden",
-          tr: "E-posta Gönder",
-          id: "Kirim Email",
-          ur: "ای میل بھیجیں"
+        let currentLang = 'ar';
+
+        // تهيئة التطبيق
+        document.addEventListener('DOMContentLoaded', function() {
+            // إعداد مستمعي الأحداث
+            setupEventListeners();
+            
+            // إنشاء أزرار اللغات
+            createLanguageButtons();
+            
+            // تحديث المحتوى باللغة العربية افتراضياً
+            updatePageContent('ar');
+        });
+
+        // إعداد مستمعي الأحداث
+        function setupEventListeners() {
+            // زر العودة للأعلى
+            const backToTopBtn = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+                
+                // تأثير التمرير على الهيدر
+                const header = document.getElementById('mainHeader');
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            
+            // زر الاستكشاف
+            const exploreBtn = document.getElementById('exploreBtn');
+            
+            exploreBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                scrollToContact();
+            });
         }
-      },
-      whatsapp: {
-        title: {
-          ar: "واتساب",
-          fr: "WhatsApp",
-          en: "WhatsApp",
-          es: "WhatsApp",
-          de: "WhatsApp",
-          tr: "WhatsApp",
-          id: "WhatsApp",
-          ur: "واٹس ایپ"
-        },
-        desc: {
-          ar: "تواصل معنا عبر واتساب للحصول على إجابات سريعة لاستفساراتك بإذن الله",
-          fr: "Contactez-nous via WhatsApp pour des réponses rapides à vos questions, si Dieu le veut",
-          en: "Contact us via WhatsApp for quick answers to your inquiries, God willing",
-          es: "Contáctenos por WhatsApp para obtener respuestas rápidas a sus consultas, si Dios quiere",
-          de: "Kontaktieren Sie uns über WhatsApp für schnelle Antworten auf Ihre Anfragen, so Gott will",
-          tr: "Sorularınız için hızlı yanıtlar almak üzere WhatsApp üzerinden bizimle iletişime geçin, inşallah",
-          id: "Hubungi kami melalui WhatsApp untuk jawaban cepat atas pertanyaan Anda, insya Allah",
-          ur: "اپنے سوالات کے فوری جوابات کے لیے واٹس ایپ کے ذریعے ہم سے رابطہ کریں، ان شاء اللہ"
-        },
-        link: {
-          ar: "تواصل عبر واتساب",
-          fr: "Contacter via WhatsApp",
-          en: "Contact via WhatsApp",
-          es: "Contactar por WhatsApp",
-          de: "Kontakt per WhatsApp",
-          tr: "WhatsApp ile İletişim",
-          id: "Hubungi via WhatsApp",
-          ur: "واٹس ایپ کے ذریعے رابطہ کریں"
+
+        // إنشاء أزرار اللغات
+        function createLanguageButtons() {
+            const languageButtons = document.getElementById('languageButtons');
+            const languages = [
+                { code: 'ar', name: 'العربية' },
+                { code: 'fr', name: 'Français' },
+                { code: 'en', name: 'English' },
+                { code: 'es', name: 'Español' },
+                { code: 'de', name: 'Deutsch' },
+                { code: 'tr', name: 'Türkçe' },
+                { code: 'id', name: 'Bahasa Indonesia' },
+                { code: 'ur', name: 'اردو' }
+            ];
+            
+            languageButtons.innerHTML = languages.map(lang => `
+                <button class="lang-btn ${lang.code === currentLang ? 'active' : ''}" 
+                        onclick="changeLanguage('${lang.code}')">
+                    ${languageFlags[lang.code]} ${lang.name}
+                </button>
+            `).join('');
         }
-      },
-      facebook: {
-        title: {
-          ar: "فيسبوك",
-          fr: "Facebook",
-          en: "Facebook",
-          es: "Facebook",
-          de: "Facebook",
-          tr: "Facebook",
-          id: "Facebook",
-          ur: "فیس بک"
-        },
-        desc: {
-          ar: "تواصل معنا على فيسبوك للاستفسارات والمتابعة",
-          fr: "Contactez-nous sur Facebook pour des questions et suivi",
-          en: "Contact us on Facebook for inquiries and follow-up",
-          es: "Contáctenos en Facebook para consultas y seguimiento",
-          de: "Kontaktieren Sie uns auf Facebook für Anfragen und Follow-up",
-          tr: "Soru ve takipler için bizimle Facebook'ta iletişime geçin",
-          id: "Hubungi kami di Facebook untuk pertanyaan dan tindak lanjut",
-          ur: "سوالات اور فالو اپ کے لیے ہم سے فیس بک پر رابطہ کریں"
-        },
-        link: {
-          ar: "تواصل على فيسبوك",
-          fr: "Contacter sur Facebook",
-          en: "Contact on Facebook",
-          es: "Contactar en Facebook",
-          de: "Kontakt auf Facebook",
-          tr: "Facebook'ta İletişim",
-          id: "Hubungi di Facebook",
-          ur: "فیس بک پر رابطہ کریں"
+
+        // تغيير اللغة
+        function changeLanguage(lang) {
+            currentLang = lang;
+            
+            // تحديث أزرار اللغة النشطة
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            const activeBtn = document.querySelector(`.lang-btn[onclick="changeLanguage('${lang}')"]`);
+            if (activeBtn) {
+                activeBtn.classList.add('active');
+            }
+            
+            // تحديث المحتوى
+            updatePageContent(lang);
         }
-      },
-      instagram: {
-        title: {
-          ar: "إنستغرام",
-          fr: "Instagram",
-          en: "Instagram",
-          es: "Instagram",
-          de: "Instagram",
-          tr: "Instagram",
-          id: "Instagram",
-          ur: "انسٹاگرام"
-        },
-        desc: {
-          ar: "تواصل معنا على إنستغرام لمتابعة آخر المستجدات",
-          fr: "Contactez-nous sur Instagram pour suivre les dernières mises à jour",
-          en: "Contact us on Instagram to follow the latest updates",
-          es: "Contáctenos en Instagram para seguir las últimas actualizaciones",
-          de: "Kontaktieren Sie uns auf Instagram, um die neuesten Updates zu verfolgen",
-          tr: "En son güncellemeleri takip etmek için bizimle Instagram'da iletişime geçin",
-          id: "Hubungi kami di Instagram untuk mengikuti pembaruan terbaru",
-          ur: "تازہ ترین اپ ڈیٹس کی پیروی کے لیے ہم سے انسٹاگرام پر رابطہ کریں"
-        },
-        link: {
-          ar: "تواصل على إنستغرام",
-          fr: "Contacter sur Instagram",
-          en: "Contact on Instagram",
-          es: "Contactar en Instagram",
-          de: "Kontakt auf Instagram",
-          tr: "Instagram'da İletişim",
-          id: "Hubungi di Instagram",
-          ur: "انسٹاگرام پر رابطہ کریں"
+
+        // تحديث محتوى الصفحة
+        function updatePageContent(lang) {
+            const pageTitle = document.getElementById('pageTitle');
+            const pageSubtitle = document.getElementById('pageSubtitle');
+            
+            // تحديث عنوان الصفحة
+            pageTitle.textContent = pageData[lang].title;
+            pageSubtitle.textContent = pageData[lang].subtitle;
+            
+            // تحديث بطاقات الاتصال
+            const contactCards = pageData[lang].contactCards;
+            
+            // البريد الإلكتروني
+            document.getElementById('emailTitle').textContent = contactCards.email.title;
+            document.getElementById('emailDesc').textContent = contactCards.email.desc;
+            document.getElementById('emailLink').textContent = contactCards.email.link;
+            
+            // واتساب
+            document.getElementById('whatsappTitle').textContent = contactCards.whatsapp.title;
+            document.getElementById('whatsappDesc').textContent = contactCards.whatsapp.desc;
+            document.getElementById('whatsappLink').textContent = contactCards.whatsapp.link;
+            
+            // فيسبوك
+            document.getElementById('facebookTitle').textContent = contactCards.facebook.title;
+            document.getElementById('facebookDesc').textContent = contactCards.facebook.desc;
+            document.getElementById('facebookLink').textContent = contactCards.facebook.link;
+            
+            // إنستغرام
+            document.getElementById('instagramTitle').textContent = contactCards.instagram.title;
+            document.getElementById('instagramDesc').textContent = contactCards.instagram.desc;
+            document.getElementById('instagramLink').textContent = contactCards.instagram.link;
+            
+            // تغيير اتجاه النص بناءً على اللغة
+            if (lang === 'ar' || lang === 'ur') {
+                document.documentElement.dir = 'rtl';
+                document.documentElement.lang = 'ar';
+                document.body.style.direction = 'rtl';
+                document.body.style.textAlign = 'right';
+            } else {
+                document.documentElement.dir = 'ltr';
+                document.documentElement.lang = lang;
+                document.body.style.direction = 'ltr';
+                document.body.style.textAlign = 'left';
+            }
         }
-      }
-    };
 
-    // بيانات الفوتر
-    const footerData = {
-      home: {
-        ar: "الموقع الرسمي",
-        fr: "Site Officiel",
-        en: "Official Website",
-        es: "Sitio Oficial",
-        de: "Offizielle Website",
-        tr: "Resmi Web Sitesi",
-        id: "Situs Resmi",
-        ur: "سرکاری ویب سائٹ"
-      },
-      faq: {
-        ar: "الأسئلة الشائعة",
-        fr: "FAQ",
-        en: "FAQ",
-        es: "Preguntas Frecuentes",
-        de: "FAQ",
-        tr: "SSS",
-        id: "FAQ",
-        ur: "عمومی سوالات"
-      },
-      library: {
-        ar: "مكتبة DEENWAY",
-        fr: "Bibliothèque DEENWAY",
-        en: "DEENWAY Library",
-        es: "Biblioteca DEENWAY",
-        de: "DEENWAY Bibliothek",
-        tr: "DEENWAY Kütüphanesi",
-        id: "Perpustakaan DEENWAY",
-        ur: "DEENWAY لائبریری"
-      },
-      about: {
-        ar: "من نحن",
-        fr: "À propos",
-        en: "About Us",
-        es: "Acerca de",
-        de: "Über uns",
-        tr: "Hakkımızda",
-        id: "Tentang Kami",
-        ur: "ہمارے بارے میں"
-      }
-    };
-
-    // عناصر DOM
-    const languageDropdown = document.getElementById("languageDropdown");
-    const pageTitleEl = document.getElementById("pageTitle");
-    const pageSubtitleEl = document.getElementById("pageSubtitle");
-
-    let currentLang = languageDropdown.value || 'ar';
-
-    function updatePageContent(lang) {
-      // تحديث عنوان الصفحة
-      pageTitleEl.textContent = pageTitles[lang] || pageTitles['ar'];
-      pageSubtitleEl.textContent = pageSubtitles[lang] || pageSubtitles['ar'];
-      
-      // تحديث بطاقات الاتصال
-      document.getElementById('emailTitle').textContent = contactData.email.title[lang] || contactData.email.title['ar'];
-      document.getElementById('emailDesc').textContent = contactData.email.desc[lang] || contactData.email.desc['ar'];
-      document.getElementById('emailLink').textContent = contactData.email.link[lang] || contactData.email.link['ar'];
-      
-      document.getElementById('whatsappTitle').textContent = contactData.whatsapp.title[lang] || contactData.whatsapp.title['ar'];
-      document.getElementById('whatsappDesc').textContent = contactData.whatsapp.desc[lang] || contactData.whatsapp.desc['ar'];
-      document.getElementById('whatsappLink').textContent = contactData.whatsapp.link[lang] || contactData.whatsapp.link['ar'];
-      
-      document.getElementById('facebookTitle').textContent = contactData.facebook.title[lang] || contactData.facebook.title['ar'];
-      document.getElementById('facebookDesc').textContent = contactData.facebook.desc[lang] || contactData.facebook.desc['ar'];
-      document.getElementById('facebookLink').textContent = contactData.facebook.link[lang] || contactData.facebook.link['ar'];
-      
-      document.getElementById('instagramTitle').textContent = contactData.instagram.title[lang] || contactData.instagram.title['ar'];
-      document.getElementById('instagramDesc').textContent = contactData.instagram.desc[lang] || contactData.instagram.desc['ar'];
-      document.getElementById('instagramLink').textContent = contactData.instagram.link[lang] || contactData.instagram.link['ar'];
-      
-      // تحديث الفوتر
-      document.getElementById('footerHome').textContent = footerData.home[lang] || footerData.home['ar'];
-      document.getElementById('footerFaq').textContent = footerData.faq[lang] || footerData.faq['ar'];
-      document.getElementById('footerLibrary').textContent = footerData.library[lang] || footerData.library['ar'];
-      document.getElementById('footerAbout').textContent = footerData.about[lang] || footerData.about['ar'];
-    }
-
-    function changeLanguage(lang) {
-      currentLang = lang;
-      languageDropdown.value = lang;
-      updatePageContent(lang);
-      
-      // تغيير اتجاه النص بناءً على اللغة
-      if (lang === "ar" || lang === "ur") {
-        document.documentElement.dir = "rtl";
-      } else {
-        document.documentElement.dir = "ltr";
-      }
-    }
-
-    // البداية
-    updatePageContent(currentLang);
-  </script>
+        // التمرير إلى قسم الاتصال
+        function scrollToContact() {
+            const targetSection = document.getElementById('contactSection');
+            window.scrollTo({
+                top: targetSection.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 </html>
